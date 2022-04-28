@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/Imgs">
+        <file>Imgs/parker.png</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file>Fonts/Quicksand-Bold.ttf</file>
+        <file>Fonts/Quicksand-Light.ttf</file>
+        <file>Fonts/Quicksand-Medium.ttf</file>
+        <file>Fonts/Quicksand-Regular.ttf</file>
+        <file>Fonts/Quicksand-SemiBold.ttf</file>
+        <file>Fonts/Quicksand.ttf</file>
+    </qresource>
+</RCC>

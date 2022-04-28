@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SplashScreen</class>
+ <widget class="QFrame" name="SplashScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>789</width>
+    <height>617</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>789</width>
+    <height>434</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>790</width>
+    <height>620</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame#SplashScreen{
+	background-color: rgb(46, 47, 48);
+}
+
+QFrame#SplashScreen QLabel{
+	color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="logo">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>367</width>
+           <height>137</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>367</width>
+           <height>137</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="../ressources.qrc">:/Imgs/Imgs/parker.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>24</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <family>Quicksand Medium</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Sélectionner la configuration que vous souhaitez utiliser :</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="cBChoixConfig">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>38</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Quicksand SemiBold</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox#cBChoixConfig
+{
+	color: rgb(208, 208, 208);
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #565656, stop: 0.1 #525252, stop: 0.5 #4e4e4e, stop: 0.9 #4a4a4a, stop: 1 #464646);
+    border: 2px solid #1e1e1e;
+    border-radius: 8px;
+}
+
+QComboBox#cBChoixConfig:hover
+{
+    border: 2px solid black;
+    color: white;
+}
+
+QComboBox#cBChoixConfig QAbstractItemView
+{
+	background-color: rgb(46, 47, 48);
+	border: 2px solid black;
+	selection-background-color: rgb(81, 81, 81);
+	border-top: none;
+}
+
+QComboBox#cBChoixConfig::drop-down
+{
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 15px;
+     color: white;
+     border-left-color: darkgray;
+     padding-left: 10px;
+ }
+
+</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxELEC">
+         <property name="styleSheet">
+          <string notr="true">QCheckBox#checkBoxELEC{
+	font: 57 12pt &quot;Quicksand Medium&quot;;
+	color: rgb(255, 255, 255);
+}
+
+QCheckBox#checkBoxELEC::indicator{
+	width : 25px;
+	height : 25px;
+}
+
+QCheckBox#checkBoxELEC::indicator:unchecked{
+	image : url(:/qss_icons/rc/checkbox_unchecked.png); 
+	
+}
+
+QCheckBox#checkBoxELEC::indicator:checked{
+	image : url(:/qss_icons/rc/checkbox_checked.png); 
+}
+
+QCheckBox#checkBoxELEC::indicator:unchecked:hover{
+	image : url(:/qss_icons/rc/checkbox_unchecked_focus.png); 
+	
+}
+
+QCheckBox#checkBoxELEC::indicator:checked:hover{
+	image : url(:/qss_icons/rc/checkbox_checked_focus.png);
+}</string>
+         </property>
+         <property name="text">
+          <string>Sans GPIB</string>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QProgressBar" name="progressBar">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar:horizontal {
+	border: 2px solid black;
+	border-radius: 5;
+	background: transparent;
+	padding: 1px;
+}
+QProgressBar::chunk:horizontal {
+	background: qlineargradient(x1: 0, y1: 0.5, x2: 1, y2: 0.5, stop: 0 rgba(47, 252, 255, 200), stop: 1 rgba(15, 183, 255, 100));
+}</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="textEdit">
+       <property name="minimumSize">
+        <size>
+         <width>611</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>12323415</width>
+         <height>12351566</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTextEdit#textEdit{
+	background-color: rgb(46, 47, 48);
+	color: rgb(255, 0, 0);
+	font: 57 14pt &quot;Quicksand SemiBold&quot;;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Quicksand SemiBold'; font-size:14pt; font-weight:56; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="pBLancerConfig">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>300</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>300</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Quicksand SemiBold</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pBLancerConfig{
+	border: 2px solid black;
+	border-radius: 5;
+	color: rgb(208, 208, 208);
+}
+
+QPushButton#pBLancerConfig:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgba(0, 255, 0, 65);
+	
+}
+
+QPushButton#pBLancerConfig:!enabled{
+	color: rgb(62, 62, 62);
+}</string>
+         </property>
+         <property name="text">
+          <string>Lancer le chargement</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pBQuitter">
+         <property name="minimumSize">
+          <size>
+           <width>183</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>183</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Quicksand SemiBold</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pBQuitter{
+	border: 2px solid black;
+	color: rgb(208, 208, 208);
+	border-radius: 5;
+}
+
+QPushButton#pBQuitter:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgba(255, 0, 0, 60);
+}</string>
+         </property>
+         <property name="text">
+          <string>Quitter</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../ressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
